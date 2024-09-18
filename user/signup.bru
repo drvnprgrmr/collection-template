@@ -1,0 +1,36 @@
+meta {
+  name: signup
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/user/signup
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "johndoe",
+    "name.first": "john",
+    "name.last": "doe",
+    "email.value": "john.doe@example.com",
+    "bio": "Hi!\nI'm unknown.",
+    "password": "Testing@123",
+    "gender": "male",
+    "birthday": "2000-05-11T12:30:44.633Z"
+  }
+}
+
+script:post-response {
+  const reqBody = req.getBody();
+  const { data } = res.getBody();
+  
+  if (res.status === 201) {
+    bru.setEnvVar('email', reqBody['email.value']);
+    bru.setEnvVar('password', reqBody.password);
+    
+    bru.setEnvVar('token', data.token);
+  }
+}
