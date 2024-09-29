@@ -1,0 +1,18 @@
+meta {
+  name: create blog post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/blog/post
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Hello, world!",
+    "body": "This is a test blog"
+  }
+}
