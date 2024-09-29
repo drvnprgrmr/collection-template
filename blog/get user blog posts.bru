@@ -1,0 +1,15 @@
+meta {
+  name: get user blog posts
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/blog/post/me?status=published
+  body: none
+  auth: inherit
+}
+
+params:query {
+  status: published
+}
