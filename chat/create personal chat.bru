@@ -1,0 +1,17 @@
+meta {
+  name: create personal chat
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/chat/personal
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "participantId": "66faaed9dce69080e04fb13b"
+  }
+}
