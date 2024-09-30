@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/user
+  url: {{baseUrl}}/user?q=jane
   body: none
   auth: none
+}
+
+params:query {
+  q: jane
 }
