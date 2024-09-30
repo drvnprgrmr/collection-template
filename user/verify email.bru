@@ -1,0 +1,16 @@
+meta {
+  name: verify email
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/user/verify-email?email={{email}}&otp=356225
+  body: none
+  auth: none
+}
+
+params:query {
+  email: {{email}}
+  otp: 356225
+}
