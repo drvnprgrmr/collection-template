@@ -1,0 +1,15 @@
+meta {
+  name: get user blog post
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/blog/post/me/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 66fc9d77aa4b5ff234337861
+}

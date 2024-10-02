@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/blog/post
+  url: {{baseUrl}}/blog/post/:path
   body: none
   auth: none
+}
+
+params:path {
+  path: hello-world
 }
