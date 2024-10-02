@@ -1,0 +1,21 @@
+meta {
+  name: update blog post
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{baseUrl}}/blog/post
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": "66fc9d77aa4b5ff234337861",
+    "path": "hello-world",
+    "title": "Hello, world!",
+    "status": "published",
+    "body": "It's a brand new day"
+  }
+}

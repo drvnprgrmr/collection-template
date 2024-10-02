@@ -5,11 +5,11 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/blog/post/me?status=published
+  url: {{baseUrl}}/blog/post/me
   body: none
   auth: inherit
 }
 
 params:query {
-  status: published
+  ~status: published
 }
