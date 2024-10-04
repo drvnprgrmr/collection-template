@@ -1,0 +1,19 @@
+meta {
+  name: update mailing list
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/mailing-list
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "contact": {
+      "email": "ekunweibukun159357@gmail.com"
+    }
+  }
+}
