@@ -1,0 +1,18 @@
+meta {
+  name: submit form
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/form
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  email: ekunweibukun159357@gmail.com
+  message: Just testing the forms
+  firstName: Ibukun
+  lastName: Ekunwe
+}
