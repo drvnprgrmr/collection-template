@@ -1,0 +1,16 @@
+meta {
+  name: get bank account name
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/bank-account-name?accountNumber=0791943503&bankCode=058
+  body: none
+  auth: none
+}
+
+params:query {
+  accountNumber: 0791943503
+  bankCode: 058
+}
