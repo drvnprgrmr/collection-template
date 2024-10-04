@@ -1,0 +1,15 @@
+meta {
+  name: get qrcode image
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/qrcode?data=https://example.com
+  body: none
+  auth: none
+}
+
+params:query {
+  data: https://example.com
+}
