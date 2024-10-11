@@ -1,0 +1,17 @@
+meta {
+  name: follow user
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/user/follow
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "followingId": "66faaed9dce69080e04fb13b"
+  }
+}
