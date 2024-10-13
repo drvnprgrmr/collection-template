@@ -1,0 +1,15 @@
+meta {
+  name: get user's followers
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/user/follow?type=follower
+  body: none
+  auth: inherit
+}
+
+params:query {
+  type: follower
+}

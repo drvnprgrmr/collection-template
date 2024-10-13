@@ -1,0 +1,15 @@
+meta {
+  name: unfollow user
+  type: http
+  seq: 13
+}
+
+delete {
+  url: {{baseUrl}}/user/follow?followingId=66faaed9dce69080e04fb13b
+  body: none
+  auth: inherit
+}
+
+params:query {
+  followingId: 66faaed9dce69080e04fb13b
+}
