@@ -1,0 +1,15 @@
+meta {
+  name: get follow status of a user
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/user/follow/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 66faaed9dce69080e04fb13b
+}
