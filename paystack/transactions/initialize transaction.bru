@@ -1,0 +1,17 @@
+meta {
+  name: initialize transaction
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/paystack/transaction/initialize
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "amount": 10000
+  }
+}
