@@ -1,0 +1,16 @@
+meta {
+  name: resolve account
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/paystack/bank/resolve?account_number=0791943503&bank_code=058
+  body: none
+  auth: inherit
+}
+
+params:query {
+  account_number: 0791943503
+  bank_code: 058
+}

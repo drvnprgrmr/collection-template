@@ -1,0 +1,23 @@
+meta {
+  name: validate account
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/paystack/bank/validate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "account_name": "EKUNWE  IBUKUN BLESSING",
+    "account_number": "0791943503",
+    "account_type": "personal",
+    "bank_code": "058",
+    "country_code": "NG",
+    "document_type": "identityNumber",
+    "document_number": "039203841022390"
+  }
+}
