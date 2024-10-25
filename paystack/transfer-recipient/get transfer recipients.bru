@@ -1,0 +1,11 @@
+meta {
+  name: get transfer recipients
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/paystack/transfer-recipient
+  body: none
+  auth: inherit
+}
