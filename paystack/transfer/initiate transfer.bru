@@ -1,0 +1,18 @@
+meta {
+  name: initiate transfer
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/paystack/transfer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "amount": 100,
+    "recipient": "RCP_nwz3vqlfbf8di35"
+  }
+}
