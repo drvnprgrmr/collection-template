@@ -1,0 +1,18 @@
+meta {
+  name: webhook
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/paystack/webhook
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "event": "doesnotexist",
+    "data": {}
+  }
+}
