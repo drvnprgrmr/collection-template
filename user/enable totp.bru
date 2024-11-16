@@ -1,0 +1,11 @@
+meta {
+  name: enable totp
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/user/totp/enable
+  body: none
+  auth: inherit
+}
